@@ -1,0 +1,35 @@
+//Il faut que je revienne dessus
+
+.btn{
+    width: 250px;
+    height: 60px;
+
+    background-color: $secondColor;
+    border: 0;
+    border-radius: 4px;
+
+    @include boxshadow(2px);
+    
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-second{
+    width: 160px;
+    height: 60px;
+
+    background-color: transparent;
+    border: 2px solid $secondColor;
+    border-radius: 4px;
+
+    color: $secondColor;
+
+    @include boxshadow(2px);
+
+    font-weight: bold;
+    font-size: 18px;
+}

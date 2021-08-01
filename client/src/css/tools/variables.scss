@@ -1,0 +1,23 @@
+// About evry color
+$mainColor : #002147;
+$secondColor : #0065D8;
+$thirdColor : #639FAB;
+$borderColor : #d5e3ec;
+
+$cardColor : ("0" : #433beb,"1" : #FFD700,"2" : #1C9328);
+
+//About font 
+$font-root : 16px !default;
+$font-family-current : 'Sura', serif;
+$logo-font : 'Niconne', cursive;
+$title-font : 'Lobster', cursive;
+
+//About media query
+$mobileSize : 576px;
+$mobileMediumSize : 768px;
+$largeDesktopSize : 992px;
+$extraDesktopSize : 1200px;
+$sm :" all and (max-width : #{$mobileSize})";
+$md :" all and (max-width : #{$mobileMediumSize})";
+$lg : " all and (max-width : #{$largeDesktopSize})";
+$xl : " all and (max-width : #{$extraDesktopSize})";

@@ -1,12 +1,10 @@
-import './App.css';
-import NavBar from "./components/NavBar/NavBar";
-import Header from './components/Header/Header';
+import './css/style.scss';
+import MainPage from './Views/MainPage';
 
 function App() {
   return (
     <div id="app">
-      <NavBar/>
-      <Header/>
+      <MainPage/>
     </div>
   );
 }

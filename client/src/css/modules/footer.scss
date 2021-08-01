@@ -1,0 +1,102 @@
+.footer {
+  background-color: #ececec;
+}
+
+.newsletter {
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    max-width: 1000px;
+    @include boxshadow(4px);
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.newsletter-h1 {
+  width: 60%;
+}
+
+.newsletter-input {
+  width: 60%;
+  height: calc(15px + 1vw);
+  padding: 15px 25px;
+  border: 0;
+  @include boxshadow(2px);
+  background-color: #ececec;
+  font-size: responsText(1rem);
+}
+
+.service-information {
+  background-color: #333;
+  padding-top: 120px;
+  @include containerPadding(900px);
+  padding-bottom: 20px;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: " general social " " general mention ";
+  @media #{$lg}{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "general" "social" "mention";
+  }
+}
+
+.general-information {
+  grid-area: general;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #2a2a2a;
+  align-self: center;
+  padding: 40px 60px;
+justify-self: cnter;
+}
+
+.general-information-logo {
+  font-size: responsText(1.4rem);
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.location,
+.contact,
+.mail,
+.webSite {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.social-link {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  justify-self: center;
+  align-self: center;
+  padding: 40px 50px;
+  border-radius: 4px;
+}
+
+.social-icon {
+  font-size: responsText(1.7rem);
+  padding: 0 20px;
+}
+
+.mention-legal {
+  grid-area: mention;
+  background-color: #2a2a2a;
+  justify-self: center;
+  align-self: center;
+  padding: 40px 50px;
+}

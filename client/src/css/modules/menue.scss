@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 10px 20px 10px 0px;
-    @include boxshadow(2px);
+    @include boxshadow(0.1px);
     background-color: #fff;
 }
 
@@ -19,8 +19,9 @@
 
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
     font-size: responsText(1.1rem);
+    padding-right: 10vw;
 }
 
 .menu-item{
@@ -29,9 +30,13 @@
     a:hover{
         color: $secondColor;
     }
+    a{
+        padding: 0 17px;
+        text-align: center;
+    }
 }
 
-@media #{$sm}{
+@media #{$md}{
     .menu-button{
         display: block;
         //Warning pour le futur ici
@@ -48,7 +53,7 @@
         flex-direction: column;
         grid-column: 1 / 3;
         display: none;
-
+        padding-right: 0;
         //Revenir sur  la video de grafikart pour la question de transition
     }
 

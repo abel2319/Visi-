@@ -6,7 +6,7 @@ function Header() {
     return (
         <header id="header" className="header">
             <div className="header-text">
-                <h1 className="text-h1 text-h1-header">Lorem <span>ipsum</span>  dolor sit amet consectetur</h1>
+                <h1 className="text-h1-header text-h1">Lorem <span>ipsum</span>  dolor sit amet consectetur</h1>
                 <h2 className="text-h2 text-h2-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia.</h2>
                 <Button class="btn btn-header">Demandez un devis</Button>
                 <Button class="btn-second btn-second-header">See more</Button>

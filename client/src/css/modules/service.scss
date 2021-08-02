@@ -1,7 +1,8 @@
 .service {
+  padding: 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid $borderColor;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 0.7px solid $borderColor;
   @media #{$md}{
     grid-template-columns: 1fr;
   }
@@ -10,7 +11,7 @@
 
 
 .serviceText {
-  padding: 4vw 20px;
+  padding: 4vw 30px;
 }
 
 .service-h1{
@@ -19,22 +20,22 @@
 }
 
 .service-text-description{
-    font-size: responsText(1.17rem);
+    font-size: responsText(1.05rem);
     text-align: justify;
-    @include containerPadding(620px);
+    @include containerPadding(750px);
 }
 
 .serviceIllustration {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   @media #{$md}{
     display: none;
   }
 }
 
 .serviceIllustrationImg {
-  max-width: 550px;
+  max-width: 450px;
 }
 
 .service-section {

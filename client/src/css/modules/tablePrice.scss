@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    width: 370px;
+    width: calc(320px + 1vw);
     border: 1px solid $borderColor;
     @include boxshadow(2px);
 
@@ -19,6 +19,7 @@
     border-bottom: 1px solid $borderColor;
     width: 100%;
     text-align: center;
+    font-size: responsText(1.4rem);
 }
 
 .card-list{

@@ -16,7 +16,9 @@
 
 .text-h1-header{
     width: 450px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
     @media #{$sm}{
         width: auto;
     }
@@ -40,12 +42,17 @@
 }
 
 .header-illustration-img{
-    max-width: 550px;
+    max-width: 450px;
     @media #{$lg}{
-        width: 100%;
+        width: 80%;
     }
 }
 
 .btn-header{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
+
+/*
+Prochainement pour le header je vais penser a utilier une photo a droite et mon logo en font a gauche et penser a des animations de paralaxe
+*/

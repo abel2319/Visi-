@@ -28,7 +28,7 @@
 .serviceIllustration {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   @media #{$md}{
     display: none;
   }

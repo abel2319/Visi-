@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
-import HeaderIllustration from '../../Images/HeaderIllustration.svg'
+import HeaderIllustration from '../../Images/HeaderIllustration.svg';
+// import LogoHeader from '../../Images/logo.png';
 
 function Header() {
     return (

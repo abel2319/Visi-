@@ -3,16 +3,11 @@
 body, html{
     font-size: 16px;
     font-family: $font-family-current;
-
+    // overflow-y: hidden;
     color: $mainColor;
 }
 
 img{
     max-width: 100%;
     height: auto;
-}
-
-a:hover{
-    color: $secondColor;
-    text-decoration: underline;
 }

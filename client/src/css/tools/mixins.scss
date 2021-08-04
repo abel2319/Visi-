@@ -1,5 +1,5 @@
 @mixin boxshadow($sizeY : 4px) {
-    box-shadow: 0px $sizeY 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px $sizeY 4px rgba(0, 0, 0, 0.09);
 } 
 
 @mixin containerPadding($size : 1330px) {  

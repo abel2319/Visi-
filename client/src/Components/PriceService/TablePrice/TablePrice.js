@@ -8,13 +8,13 @@ export default function TablePrice() {
             {
                 TableText.map((card, index)=>{
                     return(
-                        <div className="card" id={`card${index}`}>
+                        <div className="card" key={index} id={`card${index}`}>
                             <h1 className={`card-title card-title${index}`}>{card.title}</h1>
                             <ul className={`card-list card-list${index}`}>
                             {
-                                card.offre.map((text)=>{
+                                card.offre.map((text, index)=>{
                                     return(
-                                        <li className="card-item">
+                                        <li key={index} className="card-item">
                                             <div className="pucH"></div>
                                             <div className="pucV"></div>
                                             <span className="card-item-content">{text}</span>

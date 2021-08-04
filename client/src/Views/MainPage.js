@@ -1,8 +1,8 @@
 import NavBar from "../Components/NavBar/NavBar";
 import Header from '../Components/Header/Header';
-import Service from "../Components/Service/Service";
-import PriceService from "../Components/PriceService/PriceService";
-import Footer from "../Components/Footer/Footer";
+// import Service from "../Components/Service/Service";
+// import PriceService from "../Components/PriceService/PriceService";
+// import Footer from "../Components/Footer/Footer";
 
 
 function MainPage() {
@@ -10,11 +10,11 @@ function MainPage() {
     <div id="mainPage">
       <NavBar/>
       <Header/>
-      <main>
+      {/* <main>
           <Service/>
           <PriceService/>
       </main>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }

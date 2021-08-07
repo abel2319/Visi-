@@ -1,0 +1,15 @@
+@mixin  containerPadding($size : $desktopSize) {
+    padding-left: calc( 50vw - #{$size}/2 );
+    padding-right: calc( 50vw - #{$size}/2 );
+}
+
+@mixin maskBeforeAnimation($x, $y, $time){
+    opacity: 0;
+    transform: translate(#{$x}, #{$y});
+    transition: opacity $time, transform $time;
+}
+
+@mixin showForAnimation {
+    opacity: 1;
+    transform: translate(0);
+}

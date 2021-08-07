@@ -1,22 +1,14 @@
-import NavBar from "../Components/NavBar/NavBar";
+import React from 'react';
 import Header from '../Components/Header/Header';
-// import Service from "../Components/Service/Service";
-// import PriceService from "../Components/PriceService/PriceService";
-// import Footer from "../Components/Footer/Footer";
-
+import NavBar from '../Components/NavBar/NavBar';
 
 function MainPage() {
-  return (
-    <div id="mainPage">
-      <NavBar/>
-      <Header/>
-      {/* <main>
-          <Service/>
-          <PriceService/>
-      </main>
-      <Footer/> */}
-    </div>
-  );
+    return (
+        <main>
+            <NavBar/>
+            <Header/>
+        </main>
+    )
 }
 
 export default MainPage;

@@ -1,0 +1,3 @@
+@function FontRespons($fontSize : $BasefontSize){
+    @return calc(#{$fontSize} + 0.4vw);
+}

@@ -1,0 +1,36 @@
+// For Color
+$primaryColor : #0052FF;
+
+$textColor1 : #002147;
+$textColor2 : #001833;
+$textColor3 : #dcdcdc;
+
+$backColor1 : #fff;
+$backColor2 : #0047DE;
+
+$borderColor : #D5E3EC;
+$shadowColor : #D8E1E8;
+
+$myWhite : #fff;
+
+//For Fonts
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,900&display=swap');
+
+
+$bodyFont : 'Karla', sans-serif;
+
+$titleFont : 'Roboto', sans-serif;
+
+$BasefontSize : 16px;
+
+//For Medias Queries
+
+$smallMobileSize : 576px;
+$mobileSize : 768px;
+$tabletteSize : 992px;
+$desktopSize : 1200px;
+
+$sm : " all and ( max-width : #{$smallMobileSize} )";
+$md : " all and ( max-width : #{$mobileSize} )";
+$lg : " all and ( max-width : #{$tabletteSize} )";
+$xl : " all and ( max-width : #{$desktopSize} )";

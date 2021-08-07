@@ -1,0 +1,3 @@
+.header-text-h1-active, .header-illustration-img-active, .header-text-description-active, .header-btn-active{
+    @include showForAnimation;
+}

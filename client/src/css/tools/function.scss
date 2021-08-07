@@ -1,3 +1,0 @@
-@function responsText($text-size : 15px){
-    @return calc(#{$text-size} + 0.2vw);
-}

@@ -1,29 +1,47 @@
-import { useState } from 'react';
-import { Items } from './NavBarItem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import React, {useState, useRef, useEffect} from 'react';
 import Logo from '../../Images/logo.png';
+import { listMenu, listSocial } from './NavBarList';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function NavBar() {
-
+    const menu = useRef(null);
     const [active, setActive] = useState(false);
 
-    function toogleNav(){
+    function handleNav(){
         setActive(!active);
     }
 
+    useEffect(()=>{
+        menu.current.classList.add("menu-active")
+    });
+
     return (
-        <nav id="nav">
-            <div className="mynav">
-                <img src={Logo} alt="Visi+" className="nav-logo"/>
-                <div className="menu-button" >
-                    <span onClick={toogleNav}><FontAwesomeIcon icon={ !active ? faBars : faTimes}/></span>
+        <nav>
+            <div ref={menu} id="nav" className="nav">
+                <img src={Logo} alt="Mon Logo" className="logo"/>
+
+                <div className="header-icon" onClick={handleNav}>
+                    <FontAwesomeIcon icon={ active ? faTimes : faBars }/>
                 </div>
-                <ul className= { active ? "menu menu-visible" : "menu"}>
+
+                <ul className={active ? "menu menu-nav-active" : "menu"}>
                     {
-                        Items.map((item, index)=>{
-                            return(
-                                <li key={index} className="menu-item"><a href={item.item_link}>{item.item_name}</a></li>
+                        listMenu.map((navItem, index)=>{
+                            return (
+                                <li key={index} className="menu-item" ><a className="menu-item-link" href={navItem.url}>{navItem.name}</a></li>
+                            )
+                        })
+                    }
+                </ul>
+
+                <ul className="menu-social">
+                    {
+                        listSocial.map((socialItem, index)=>{
+                            return (
+                                <li key={index} className="menu-social-item" ><a className="menu-social-link" href={socialItem.url}> <FontAwesomeIcon icon={socialItem.name}/> </a></li>
                             )
                         })
                     }
@@ -33,4 +51,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBar;

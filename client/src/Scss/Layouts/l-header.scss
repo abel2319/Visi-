@@ -1,0 +1,8 @@
+#header{
+    padding-top: 3rem;
+    // min-height: 60vh;
+    @include containerPadding;
+    @media #{$xl}{
+        padding: 0 2rem;
+    }
+}

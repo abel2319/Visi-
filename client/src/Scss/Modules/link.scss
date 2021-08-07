@@ -1,0 +1,8 @@
+.menu-item-link, .menu-social-link{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.menu-item-link:hover, .menu-social-link:hover{
+    transform: translateY(-0.25rem);
+}

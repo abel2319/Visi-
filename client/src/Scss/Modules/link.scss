@@ -6,3 +6,15 @@
 .menu-item-link:hover, .menu-social-link:hover{
     transform: translateY(-0.25rem);
 }
+
+.service-link{
+    float: right;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $primaryColor;
+}
+
+.service-link:hover{
+    text-decoration: none;
+}

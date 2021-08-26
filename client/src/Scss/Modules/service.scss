@@ -1,0 +1,39 @@
+.ourService{
+    background-color: $backColor2;
+}
+
+.service-groupe{
+    padding: 5rem 1rem;
+    display: flex;
+    gap: 2rem;
+    height: 40rem;
+    @media #{$lg}{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.aside-service{
+    background-color: $backColor1;
+    padding: 2rem 1.5rem;
+    height: min-content;
+    border-radius: 4px;
+    box-shadow: 0 0 5px $shadowColor;
+    @media #{$lg}{
+        width: 55%;
+        min-width: 17rem;
+    }
+    @media #{$sm}{
+        width: 100%;
+    }
+}
+
+.service-text{
+    text-align: justify;
+    padding-bottom: 1.5rem;
+    line-height: 1.3rem;
+}
+
+.service-1, .service-3{
+    align-self: flex-end;
+}

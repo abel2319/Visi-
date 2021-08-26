@@ -1,7 +1,7 @@
 #nav{
     position: relative;
+    z-index: 200;
 
-    width: 100vw;
     @include containerPadding;
     padding-top: 1rem;
     @media #{$xl}{

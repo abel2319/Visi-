@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     @media #{$lg}{
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-row: auto;
     }
     column-gap: 2rem;
@@ -21,15 +21,14 @@
 
     @media #{$sm}{
         width: 100%;
-        // font-size: FontRespons(2rem);
     }
 }
 
 .header-text-description{
     padding: 2rem 0;
     text-align: justify;
-    // width: 80%;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
+    font-size: FontRespons(0.8rem);
 
     @include maskBeforeAnimation(-5rem, 0, 1.5s);
 }
@@ -41,20 +40,18 @@
     @media #{$sm}{
         flex-direction: column;
     }
-    @include maskBeforeAnimation(0, 2rem, 2s)
+    @include maskBeforeAnimation(0, 2rem, 1.8s)
 }
 
 .header-illustration{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     @media #{$lg}{
         padding-top: 2rem;
     }
 }
 
 .header-illustration-img{
-
     @include maskBeforeAnimation(5rem, 0, 1s);
 }

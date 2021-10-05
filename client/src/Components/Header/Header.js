@@ -1,4 +1,5 @@
-import React,  {useEffect, useRef} from 'react';
+import React,  {useRef} from 'react';
+import { useIntersectionObserver } from '../../FunctionTools/FunctionTool';
 import headerIllustration from '../../Images/header-illustration.svg';
 import Button from '../Button/Button';
 
@@ -9,13 +10,10 @@ function Header() {
     const headerImg = useRef(null);
     const headerButton = useRef(null);
 
-    useEffect(() => {
-        headerH1.current.classList.add("header-text-h1-active");
-        headerImg.current.classList.add("header-illustration-img-active");
-        headerText.current.classList.add("header-text-description-active");
-        headerButton.current.classList.add("header-btn-active");
-    });
-
+    useIntersectionObserver(headerH1, "header-text-h1-active", 0.5);
+    useIntersectionObserver(headerImg, "header-illustration-img-active", 0.5);
+    useIntersectionObserver(headerButton, "header-btn-active", 1.0);
+    useIntersectionObserver(headerText, "header-text-description-active", 0.5)
     return (
         <header>
             <div className="header" id="header">

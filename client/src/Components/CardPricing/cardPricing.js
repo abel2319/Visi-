@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Button from '../Button/Button';
+import {useIntersectionObserver} from '../../FunctionTools/FunctionTool';
 
 function CardPricing(props) {
+    let div = useRef(null)
+    useIntersectionObserver(div, "card-active", 0.2);
+
     let {type, style, price, advantage} = props.item;
     return (
-        <div className={`card ${style}`}>
+        <div ref={div} className={`card ${style} card-${props.keys}`}>
             <h1 className="card-title">{type}</h1>
             <span className="card-price">{price}<span>$ttc</span> </span>
             <ul className="card-advantage">

@@ -16,6 +16,7 @@
 .aside-service{
     background-color: $backColor1;
     padding: 2rem 1.5rem;
+    margin: 1rem 0;
     height: min-content;
     border-radius: 4px;
     box-shadow: 0 0 5px $shadowColor;
@@ -31,7 +32,7 @@
 .service-text{
     text-align: justify;
     padding-bottom: 1.5rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 
 .service-1, .service-3{

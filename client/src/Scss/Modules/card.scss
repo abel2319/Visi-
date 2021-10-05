@@ -11,6 +11,14 @@
     }
 }
 
+.card-0{
+    @include maskBeforeAnimation(-5rem, 0, 1s)
+}
+
+.card-1{
+    @include maskBeforeAnimation(5rem, 0, 1s)
+}
+
 .card-title{
     font-size: FontRespons(1.2rem);
     font-weight: 800;

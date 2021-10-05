@@ -17,7 +17,7 @@
 .header-text-h1{
     width: 24rem;
 
-    @include maskBeforeAnimation(-5rem, 0, 1s);
+    @include maskBeforeAnimation(-1rem, 0, 1s);
 
     @media #{$sm}{
         width: 100%;
@@ -27,7 +27,7 @@
 .header-text-description{
     padding: 2rem 0;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-size: FontRespons(0.8rem);
 
     @include maskBeforeAnimation(-5rem, 0, 1.5s);

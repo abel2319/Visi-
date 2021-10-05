@@ -1,6 +1,7 @@
-import React from 'react';
+// import React, { useRef } from 'react';
 import CardPricing from './cardPricing';
 import { item } from './itemPricing';
+// import {useIntersectionObserver} from '../../FunctionTools/FunctionTool';
 
 function Pricing() {
     return (
@@ -13,7 +14,7 @@ function Pricing() {
                 {
                     item.map((item, index)=>{
                         return (
-                            <CardPricing key={index} item={item}/>
+                            <CardPricing key={index} keys={index} item={item}/>
                         )
                     })
                 }

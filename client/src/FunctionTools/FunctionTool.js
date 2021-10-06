@@ -6,7 +6,6 @@ const useIntersectionObserver = function(element, classeName, threshold){
         var observer = new IntersectionObserver((entries)=>{
             entries.forEach(entrie=>{
                 if(entrie.intersectionRatio >= threshold){
-                    console.log("ok for "+entrie.target);
                     entrie.target.classList.add(classeName)
                     observer.unobserve(entrie.target)
                 }

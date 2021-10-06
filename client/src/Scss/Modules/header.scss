@@ -17,7 +17,7 @@
 .header-text-h1{
     width: 24rem;
 
-    @include maskBeforeAnimation(-1rem, 0, 1s);
+    @include maskBeforeAnimation(-1rem, 0, 2s);
 
     @media #{$sm}{
         width: 100%;
@@ -30,7 +30,7 @@
     line-height: 1.8rem;
     font-size: FontRespons(0.8rem);
 
-    @include maskBeforeAnimation(-5rem, 0, 1.5s);
+    @include maskBeforeAnimation(-5rem, 0, 2s);
 }
 
 .header-btn{
@@ -40,7 +40,7 @@
     @media #{$sm}{
         flex-direction: column;
     }
-    @include maskBeforeAnimation(0, 2rem, 1.8s)
+    @include maskBeforeAnimation(0, 2rem, 2s)
 }
 
 .header-illustration{

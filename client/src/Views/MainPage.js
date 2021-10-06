@@ -4,6 +4,7 @@ import Header from '../Components/Header/Header';
 import NavBar from '../Components/NavBar/NavBar';
 import OurService from '../Components/OurService/OurService';
 import Newsletter from '../Components/Newsletter/Newsletter';
+import StepService from '../Components/OurService/StepService';
 
 function MainPage() {
     return (
@@ -11,6 +12,7 @@ function MainPage() {
             <NavBar/>
             <Header/>
             <OurService/>
+            <StepService/>
             <Pricing/>
             <Newsletter/>
         </main>

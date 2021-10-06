@@ -1,6 +1,15 @@
 import React from 'react';
+import { useRef } from 'react';
+import { useIntersectionObserver } from '../../FunctionTools/FunctionTool';
 
 function OurService() {
+    const service1 = useRef(null);
+    const service2 = useRef(null);
+    const service3 = useRef(null);
+
+    useIntersectionObserver(service1, "service-1-active", 0.2);
+    useIntersectionObserver(service2, "service-2-active", 0.2);
+    useIntersectionObserver(service3, "service-3-active", 0.2);
     return (
         <>
             <div id="sub-form"></div>
@@ -10,7 +19,7 @@ function OurService() {
                     Our Service
                 </h1>
                 <div className="service-groupe">
-                    <aside className="aside-service service-1">
+                    <aside ref={service1} className="aside-service service-1">
                         <span className="icon"></span>
                         <h2 className="service-title">Title Here</h2>
                         <div className="service-text">
@@ -18,7 +27,7 @@ function OurService() {
                         </div>
                         <a className="service-link" href="/">See more</a>
                     </aside>
-                    <aside className="aside-service service-2">
+                    <aside ref={service2} className="aside-service service-2">
                         <span className="icon"></span>
                         <h2 className="service-title">Title Here</h2>
                         <div className="service-text">
@@ -26,7 +35,7 @@ function OurService() {
                         </div>
                         <a className="service-link" href="/">See more</a>
                     </aside>
-                    <aside className="aside-service service-3">
+                    <aside ref={service3} className="aside-service service-3">
                         <span className="icon"></span>
                         <h2 className="service-title">Title Here</h2>
                         <div className="service-text">
@@ -35,7 +44,8 @@ function OurService() {
                         <a className="service-link" href="/">See more</a>
                     </aside>
                 </div>
-            </section>  
+            </section>
+            <div id="sub-form-bottom"></div>
         </>
     )
 }

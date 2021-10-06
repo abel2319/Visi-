@@ -5,7 +5,7 @@
 .service-groupe{
     padding: 5rem 1rem;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     height: 40rem;
     @media #{$lg}{
         flex-direction: column;
@@ -37,4 +37,16 @@
 
 .service-1, .service-3{
     align-self: flex-end;
+}
+
+.service-1{
+    @include maskBeforeAnimation(-5rem, 0, 1s);
+}
+
+.service-2{
+    @include maskBeforeAnimation(0, -4rem, 1s);
+}
+
+.service-3{
+    @include maskBeforeAnimation(5rem, 0, 1s);
 }

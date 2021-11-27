@@ -1,9 +1,0 @@
-@media #{$sm}{
-    .menu-nav-active{
-        transform: translateX(0vw);
-    }
-}
-
-.menu-active{
-    @include showForAnimation;
-}
